@@ -44,3 +44,11 @@ terraform -install-autocomplete
 2 . AWS CLI
 
 ### [AWS CLI ](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+```
+export AWS_ACCESS_KEY_ID=
+```
+
+```
+export AWS_SECRET_ACCESS_KEY=
+```
