@@ -52,3 +52,82 @@ export AWS_ACCESS_KEY_ID=
 ```
 export AWS_SECRET_ACCESS_KEY=
 ```
+
+#### Write configuration
+
+```
+mkdir learn-terraform-aws-instance
+```
+
+```
+cd learn-terraform-aws-instance
+```
+
+```
+touch main.tf
+```
+
+```
+code .
+```
+
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  region  = "us-west-2"
+}
+
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+}
+
+```
+
+
+#### Initialize the directory
+
+
+```
+terraform init
+```
+
+```
+terraform fmt
+```
+
+```
+terraform validate
+```
+
+```
+terraform apply
+```
+
+```
+terraform show
+```
+
+```
+terraform state list
+```
+
+#### Destroy infrastructure
+
+```
+terraform destroy
+```
