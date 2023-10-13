@@ -1,2 +1,10 @@
-# terraform-OSX
-Steps to install terraform and aws cli on MAC OS X and Build infrastructure on aws and terraform destroy on aws
+### terraform-OSX
+--------------
+
+1 . terraform CLI
+
+### [Terraform CLI ](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+2 . AWS CLI
+
+### [AWS CLI ](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
