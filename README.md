@@ -41,17 +41,7 @@ touch ~/.bashrc
 ```
 terraform -install-autocomplete
 ```
-2 . AWS CLI
 
-### [AWS CLI ](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-
-```
-export AWS_ACCESS_KEY_ID=
-```
-
-```
-export AWS_SECRET_ACCESS_KEY=
-```
 
 #### Write configuration
 
@@ -130,4 +120,43 @@ terraform state list
 
 ```
 terraform destroy
+```
+
+2 . AWS CLI
+
+### [AWS CLI ](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+```
+export AWS_ACCESS_KEY_ID=
+```
+
+```
+export AWS_SECRET_ACCESS_KEY=
+```
+#### Install or update the AWS CLI
+
+
+```
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+```
+
+```
+sudo installer -pkg AWSCLIV2.pkg -target /
+```
+
+```
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+```
+
+
+```
+sudo installer -pkg ./AWSCLIV2.pkg -target /
+```
+
+```
+which aws
+```
+
+```
+aws --version
 ```
